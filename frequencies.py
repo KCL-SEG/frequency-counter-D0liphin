@@ -1,4 +1,6 @@
-def frequencies(items: list[any]) -> dict[str, int]:
+import typing
+
+def frequencies(items: list[any]) -> typing.Dict[str, int]:
     """
     Converts a list of items to a dictionary of string: frequency
     pairs.
