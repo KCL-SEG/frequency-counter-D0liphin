@@ -1,7 +1,10 @@
-"""Frequencies function."""
-"""ENTER YOUR SOLUTION HERE!"""
-
-def frequencies(items):
+def frequencies(items: list[any]):
+    """
+    Converts a list of items to a dictionary of string: frequency
+    pairs.
+    """
     frequencies = {}
-    # Your code goes here
+    for item in items:
+        k = str(item)
+        frequencies[k] = frequencies.get(k, 0) + 1
     return frequencies
